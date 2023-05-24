@@ -1,0 +1,32 @@
+form{
+    padding: 40px;
+    max-width: 800px;
+    background-color: #e7e7e7;
+    margin: 1%;
+    padding: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display:inline-table;
+}
+
+
+h1{
+    text-align: center;
+}
+input,select{
+    width: 25px;
+    text-align: center;
+    color: rgb(113, 113, 119);
+}
+
+input[type="submit"]{
+  width: 60px;
+  height: 30px;
+  background: rgb(87, 88, 100);
+  color: black;
+  font-size: medium;
+
+  
+}
+
+  
+  

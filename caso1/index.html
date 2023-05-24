@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./estilos/estilo.css">
+    </head>
+<body>
+    
+    <form name="Enviar" action="#" method="get" autocomplete="off" >
+        <table>
+            <h1>Registro de usuarios para una conferencia</h1>
+            <tr>
+               <td><label for="name">Nombre completo:</label></td>
+                <td><input type="text" name="nombre" required placeholder="Nombre completo" style="width: 200px";></td>
+            </tr>
+            <tr>
+                <td><label for="correo">Correo Electronico:</label></td>
+                <td><input type="text" name="correo" style="width: 200px" required placeholder="Correo eléctronico"> </td>
+            </tr>
+            <td><label for="Telefono">Telefono:</label> </td>
+            <td><input type="number" name="Telefono" style="width: 200px" required placeholder="Telefono"> </td>
+            <tr>
+                <td><label for="edad">Edad:</label></td>
+                 <td><input type="number" name="edad" style="width: 200px" required placeholder="Edad"></td>
+             </tr>
+             <tr>
+             <tr>
+        <tr>
+            <td><label for="ocupacion" >Ocupacion:</label></td>
+            <td><select name="ocupacion" style="width: 208px">
+                    <option value="1">Estudiante</option>
+                    <option value="2">Profesor</option>
+                    <option value="3">Contadora</option>
+                    <option value="4">Enfermera</option>
+                    <option value="5">Otro</option>
+                </select>
+            </td>
+        </tr>
+            <tr>
+                <td>
+                <label for="talla">Talla:</label>
+                <input type="radio" name="talla" value="chico">S</input>
+                <input type="radio" name="talla" value="Mediano">M </input>
+                <input type="radio" name="talla" value="Grande">L</input>
+                <input type="radio" name="talla" value="ExtraGran">XL</input>
+                </td>
+            </tr>
+        <td>
+            <label for="preferencia">Preferencias dietéticas:</label><br>
+            <input type="checkbox" name="preferencia" value="vege">Vegetariano<br>
+            <input type="checkbox" name="preferencia" value="vegeano">Vegano<br>
+            <input type="checkbox" name="preferencia" value="Singluten">Sin gluten<br>
+            <input type="checkbox" name="preferencia" value="Sinrestricciones">Sin restricciones</input>
+           
+        </td>
+        <tr>
+            <td><label for="msg"></label>¿Que esperas de la conferencia?</td>
+             <td><textarea id="msg" name="comentario"style="width: 200px"></textarea></td>
+         </tr>
+        <td>
+            <label for="conocimiento">¿Qué tanto sabe sobre desarrollo web?</label><br>
+            <input type="checkbox" name="conocimiento" value="1">nada<br>
+            <input type="checkbox" name="conocimiento" value="2">poco<br>
+            <input type="checkbox" name="conocimiento" value="3">mucho</input>
+            </input>
+        </td>
+            
+         
+         <tr>
+        <td>
+            
+            <button>
+            <input type="submit" value="Enviar">
+            </button>
+       
+        </td>
+    </tr>
+                
+    </form>
+</body>
+</html>
