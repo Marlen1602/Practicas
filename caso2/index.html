@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caso 2</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Encuesta de satisfacción de los asistentes al evento</h1>
+    <form name="enviar" action="#" method="get" autocomplete="off">
+        <table>
+         <tr>
+        <td><label for="nombre">Nombre completo:</label></td>
+        <td><input type="text" name="user" placeholder="Nombre completo" style="width: 200px";></td>
+        </tr>
+        <tr>
+            <td><label for="email">Correo electronico</label></td>
+            <td><input type="text" name="user" required placeholder="Correo electronico" style="width: 200px";></td>
+        </tr>
+        <tr>
+            <td><label for="edad">Edad</label></td>
+            <td><input type="number" name="user"  required placeholder="Edad" style="width: 200px";></td>
+        </tr>
+        <tr>
+            <td><label for="numerotel">Numero de telefono</label></td>
+            <td><input type="text" name="User" required placeholder="Numero de telefono" style="width: 200px";></td>
+        </tr>
+        <tr>
+        <td><label for="Evaluacion del evento">Evaluacion del evento</label></td> 
+        <td>
+            <select name="Evaluacion del evento" style="width: 209px";>
+                <option>Excelente</option>
+                <option>Bueno</option>
+                <option>Regular</option>
+                <option>Malo</option>
+            </select>
+        </tr>
+        </td>
+        <tr>
+            <td>
+                <label for="gusto">Le gustó el evento?</label>
+                <td><input type="checkbox" name="Votacion"/>Si</td>
+                <td><input type="checkbox" name="Votacion"/>No</td>
+            </td>
+        </tr>
+        <tr>
+        <td><label for="Comentarios">Comentario y sugerencias </label></td> 
+        <td>
+            <textarea name="texto" placeholder="Escriba un comentario o sugerencia" style="width: 200px;"></textarea>
+        </tr>
+        <tr>
+            <td><label for="cal">Del 1 al 10 que calificacion le da al evento?</label></td> 
+            <td><input type="number" name="cal"required placeholder="calificacion" style="width: 200px";></td>
+            
+        </tr>
+        <tr>
+            <td><label for="recomendacion">¿Recomendaria el evento?</label></td> 
+            <td><p><input type="checkbox" name="recomendacion"/>Si
+            </td>
+            <td><p><input type="checkbox" name="recomendacion"/>No
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit" value="Enviar">
+            </td>   
+        </tr>
+</body>
+</html>
