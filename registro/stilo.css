@@ -1,0 +1,29 @@
+*{
+    border-width: 2px;
+    border-color: black;
+    margin: 4px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: burlywood;
+}
+#serch{
+display: flex;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: burlywood;
+}
+a{
+    font-size: 15px;
+    color: black;
+}
+
+

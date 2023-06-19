@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+  <h2>Formulario de registro</h2>
+    <form action="./php/registro.php" method="post" autocomplete="off" id="formulario">
+      <fieldset>
+            <legend>Registro</legend>
+            <table>
+              <tr>
+                <td><label for="Nombre" >Nombre</label></td>
+                <td><input type="text" 
+                    name="Nombre"
+                    id="nombre"
+                    placeholder="Nombre"
+                    minlength="12"
+                    pattern="[A-Za-z ]*"
+                    required ></td>
+              </tr>
+               <tr>
+                <td><label for="user" >Usuario</label></td>
+                <td><input type="text" 
+                    name="usuario" 
+                    id="usuario" 
+                    placeholder="Usuario" 
+                    minlength="4"
+                    maxlength="10"
+                    pattern="[A-Za-z0-9_]+"
+                    required></td>
+             </tr>
+              <tr>
+                <td><label for="pass" >contraseña</label></td>
+                <td><input type="password" 
+                     name="Contra" 
+                     id="pass1" 
+                     placeholder="Contraseña"                       
+                     minlength="8" 
+                     maxlength="12"
+                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?& ]{8,15}$"
+                     onblur="captura1()"
+                     required></td>
+             </tr>
+              <tr>
+                <td><label for="pass" >confirmar contraseña</label></td>
+                <td><input type="password" 
+                    name="Contraseña" 
+                    id="pass2" 
+                    placeholder="Confirmar contraseña" 
+                    minlength="8" 
+                    maxlength="12"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?& ]{8,15}$"
+                    onblur="captura2()"
+                    required ></td>
+            </tr>
+            <tr>
+                <td><label for="Correo" >Correo</label></td>
+                <td><input type="text" 
+                    name="correo" 
+                    id="correo" 
+                    placeholder="Correo"
+                    required></td>
+            </tr>
+            <tr>
+                <td><label for="Telefono" >Telefono</label></td>
+                <td><input type="number" 
+                    name="Telefono" 
+                    id="Telefono" 
+                    placeholder="Telefono"
+                    required></td>
+            </tr>
+            <tr>
+                <td><label for="genero" >genero</label></td>
+                <td>
+                <select name="Genero">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                </select></td>
+            </tr>
+            <tr>
+            <td><label for="Fechanac" >Fecha de nacimiento</label></td>
+            <td><input type="date" 
+                 name="Fecha" 
+                 id="Fecha" 
+                 placeholder="Fechanac"
+                 required></td>
+            </tr>
+            <tr>
+            <td><button type="submit" id="enviar">Registrar</button></td>
+            </tr>
+       </table>
+   </form>
+ </section> 
+        <footer>
+            <h2>practica 3C</h2>
+        </footer>                        
+        </div>   
+        <script src="registro.js"></script>  
+</body>
+</html>
